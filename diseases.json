@@ -1,0 +1,226 @@
+[
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Unshudring",
+    "belgi": "Barg yuzasida oq, unsimon qoplama, ba’zan bargning burishishi.",
+    "tavsiya": "Havo aylanishini yaxshilang, barglar orasidagi zichlikni kamaytiring.",
+    "eslatma": "Oq qoplama ko‘ringanda bargning ikki tomonini tekshiring."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Soxta unshudring",
+    "belgi": "Barg ustida sarg‘ish dog‘lar, ostida kulrang-binafsha qoplama.",
+    "tavsiya": "Namlikni kamaytiring, bargni kechqurun ho‘llamang.",
+    "eslatma": "Bargning ostki qismini tekshirish muhim."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Zang kasalligi",
+    "belgi": "To‘q sariq, sariq yoki qo‘ng‘ir kukunsimon nuqtalar.",
+    "tavsiya": "Barglarning nam qolishini kamaytiring, havo aylanishini yaxshilang.",
+    "eslatma": "Nuqtalar ko‘pincha barg ostida ham bo‘ladi."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Alternarioz",
+    "belgi": "Halqasimon naqshli jigarrang dog‘lar va atrofida sarg‘ayish.",
+    "tavsiya": "Sug‘orishda barglarni ho‘llamaslikka harakat qiling.",
+    "eslatma": "Dog‘ ichidagi halqalar muhim belgi bo‘lishi mumkin."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Septorioz",
+    "belgi": "Mayda kulrang markazli, to‘q hoshiyali dog‘lar.",
+    "tavsiya": "Barg yuzasida namlik to‘planishini kamaytiring.",
+    "eslatma": "Mayda dog‘larning tarqalishini kuzating."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Antraknoz",
+    "belgi": "Botiq yoki qoramtir dog‘lar, ba’zan tomirlar bo‘ylab shikastlanish.",
+    "tavsiya": "To‘kilgan zararlangan qoldiqlarni yig‘ishtiring.",
+    "eslatma": "Kasallik turli o‘simliklarda turlicha ko‘rinadi."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Barg mog‘ori",
+    "belgi": "Sarg‘ish dog‘lar, ostki yuzada mog‘orsimon qoplama.",
+    "tavsiya": "Shamollatish va namlikni nazorat qiling.",
+    "eslatma": "Yopiq joylarda namlik ta’siri kuchli bo‘lishi mumkin."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Qora dog‘lanish",
+    "belgi": "Qoramtir dumaloq dog‘lar, atrofida sarg‘ayish.",
+    "tavsiya": "Barglar uzoq nam turmasligini ta’minlang.",
+    "eslatma": "Faqat qora dog‘ga qarab sababni aniq aytib bo‘lmaydi."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Serkosporoz",
+    "belgi": "Mayda och markazli, qizg‘ish yoki to‘q hoshiyali dog‘lar.",
+    "tavsiya": "Havo aylanishini yaxshilang, kasallik belgilarini kuzating.",
+    "eslatma": "Dog‘lar birlashib katta qurigan joy hosil qilishi mumkin."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Botritis (kulrang mog‘or)",
+    "belgi": "Kulrang, momiqsimon qoplama va chirish alomatlari.",
+    "tavsiya": "Ortiqcha namlikni kamaytiring, havoni aylantiring.",
+    "eslatma": "Ayniqsa nam va salqin sharoitda kuchayishi mumkin."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Fuzarioz bilan bog‘liq so‘lish",
+    "belgi": "Barglar sarg‘ayishi va so‘lishi; sabab ildiz yoki o‘tkazuvchi to‘qimada bo‘lishi mumkin.",
+    "tavsiya": "Tuproq namligi va ildiz holatini tekshiring.",
+    "eslatma": "Barg suratining o‘zi bilan tasdiqlash qiyin."
+  },
+  {
+    "tur": "Zamburug‘li",
+    "nom": "Barg kuyishi (zamburug‘li)",
+    "belgi": "Jigarrang-qoramtir maydonlar kengayishi va qurish.",
+    "tavsiya": "Namlikni me’yorlang, alomatlar rivojlanishini kuzating.",
+    "eslatma": "Quyosh kuyishi bilan adashishi mumkin."
+  },
+  {
+    "tur": "Bakterial",
+    "nom": "Bakterial dog‘lanish",
+    "belgi": "Suvlangandek mayda dog‘lar keyin qoramtirlashishi mumkin.",
+    "tavsiya": "Barglarni nam holda ushlab turmang, asboblarni toza saqlang.",
+    "eslatma": "Boshqa dog‘lanishlardan surat orqali ajratish qiyin."
+  },
+  {
+    "tur": "Bakterial",
+    "nom": "Bakterial kuyish",
+    "belgi": "Barg qirralari va tomirlari bo‘ylab qorayish yoki qurish.",
+    "tavsiya": "Namlik va barg shikastlanishini kuzating.",
+    "eslatma": "Sababni tasdiqlash uchun qo‘shimcha tekshiruv kerak bo‘lishi mumkin."
+  },
+  {
+    "tur": "Bakterial",
+    "nom": "Bakterial burchakli dog‘",
+    "belgi": "Barg tomirlari bilan chegaralangan burchaksimon dog‘lar.",
+    "tavsiya": "Barglarni ortiqcha ho‘llamang, gigiyenaga e’tibor bering.",
+    "eslatma": "Dog‘ shakli muhim, ammo yakka o‘zi yetarli emas."
+  },
+  {
+    "tur": "Virusli",
+    "nom": "Mozaika alomatlari",
+    "belgi": "Och va to‘q yashil joylar almashib, mozaik naqsh hosil qiladi.",
+    "tavsiya": "Zararkunandalarni kuzating, asboblarni toza tuting.",
+    "eslatma": "Oziqa tanqisligi ham o‘xshash ko‘rinishi mumkin."
+  },
+  {
+    "tur": "Virusli",
+    "nom": "Barg buralishi virusi alomatlari",
+    "belgi": "Barglar buralishi, maydalanishi va rang o‘zgarishi.",
+    "tavsiya": "O‘simlik atrofidagi hasharotlarni kuzating.",
+    "eslatma": "Buralish issiq, suv yoki kimyoviy stressdan ham bo‘ladi."
+  },
+  {
+    "tur": "Virusli",
+    "nom": "Halqasimon dog‘lanish",
+    "belgi": "Barg yuzasida halqa yoki yoy shaklidagi rang o‘zgarishi.",
+    "tavsiya": "Belgilar tarqalishini kuzating, asboblar gigiyenasini saqlang.",
+    "eslatma": "Turli viruslar yoki boshqa omillar o‘xshash halqa hosil qilishi mumkin."
+  },
+  {
+    "tur": "Virusli",
+    "nom": "Tomirlar oqarishi",
+    "belgi": "Barg tomirlari atrofida och rangli chiziqlar paydo bo‘lishi.",
+    "tavsiya": "Bargning yangi va eski qismlarini solishtiring.",
+    "eslatma": "Oziqlanish muammolari bilan adashishi mumkin."
+  },
+  {
+    "tur": "Zararkunanda",
+    "nom": "O‘rgimchakkana zarari",
+    "belgi": "Mayda och nuqtalar, sarg‘ayish va ba’zan ingichka to‘r.",
+    "tavsiya": "Barg ostini tekshiring, chang va quruq sharoitni kuzating.",
+    "eslatma": "Mayda zararkunanda ko‘pincha barg ostida bo‘ladi."
+  },
+  {
+    "tur": "Zararkunanda",
+    "nom": "Trips zarari",
+    "belgi": "Kumushsimon izlar, mayda qora nuqtalar, deformatsiya.",
+    "tavsiya": "Bargning yangi qismlari va ostini tekshiring.",
+    "eslatma": "Hasharotning o‘zini topish tashxisga yordam beradi."
+  },
+  {
+    "tur": "Zararkunanda",
+    "nom": "Shira zarari",
+    "belgi": "Yosh barglar buralishi, yopishqoq ajralma va mayda hasharotlar.",
+    "tavsiya": "Yangi novdalarni va barg ostini tekshiring.",
+    "eslatma": "Yopishqoq ajralma muhim qo‘shimcha belgi."
+  },
+  {
+    "tur": "Zararkunanda",
+    "nom": "Oqkanot zarari",
+    "belgi": "Sarg‘ayish, yopishqoq ajralma va barg ostida oq hasharotlar.",
+    "tavsiya": "Bargni yengil silkitib, ostini tekshiring.",
+    "eslatma": "Hasharotlar ko‘rinmasa faqat sarg‘ayish yetarli emas."
+  },
+  {
+    "tur": "Zararkunanda",
+    "nom": "Barg minyori zarari",
+    "belgi": "Barg ichida egri-bugri och yo‘laklar paydo bo‘ladi.",
+    "tavsiya": "Zararlangan barglarni kuzating va yangi izlarni tekshiring.",
+    "eslatma": "Yo‘laklar hasharot lichinkasi faoliyatidan kelishi mumkin."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Quyosh kuyishi",
+    "belgi": "Kuchli yorug‘likdan keyin oqish yoki qo‘ng‘ir quruq dog‘lar.",
+    "tavsiya": "Keskin quyosh ta’sirini kamaytiring, sug‘orishni me’yorlang.",
+    "eslatma": "Bu yuqumli kasallik emas."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Suv yetishmasligi",
+    "belgi": "Barglar osilib qolishi, chetlari qurishi mumkin.",
+    "tavsiya": "Tuproq namligini tekshirib, muntazam sug‘oring.",
+    "eslatma": "Haddan ortiq sug‘orish ham so‘lishga olib kelishi mumkin."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Ortiqcha sug‘orish",
+    "belgi": "Sarg‘ayish, so‘lish va tuproqning uzoq nam turishi.",
+    "tavsiya": "Drenaj va tuproq namligini tekshiring.",
+    "eslatma": "Barg belgisi ildiz muammosini aniq ko‘rsatmaydi."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Azot yetishmasligi",
+    "belgi": "Ko‘pincha eski barglarda bir tekis sarg‘ayish.",
+    "tavsiya": "Tuproq va oziqlantirish tarixini tekshiring.",
+    "eslatma": "Faqat rangga qarab oziqa qo‘shish to‘g‘ri emas."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Temir yetishmasligi",
+    "belgi": "Yangi barglarda tomir oralari sarg‘ayib, tomirlar yashil qolishi mumkin.",
+    "tavsiya": "Tuproq pH va oziqa sharoitlarini tekshiring.",
+    "eslatma": "Turli oziqa muammolari o‘xshash bo‘lishi mumkin."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Magniy yetishmasligi",
+    "belgi": "Ko‘proq eski barglarda tomir oralari sarg‘ayishi.",
+    "tavsiya": "Oziqlanish va tuproq sharoitlarini tekshiring.",
+    "eslatma": "Bu yuqumli kasallik emas."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Sovuq zarari",
+    "belgi": "Bargda suvlangandek joylar, qorayish va so‘lish.",
+    "tavsiya": "Harorat keskin tushishidan himoya qiling.",
+    "eslatma": "Harorat tarixini bilish muhim."
+  },
+  {
+    "tur": "Parvarish va muhit",
+    "nom": "Kimyoviy ta’sir alomatlari",
+    "belgi": "Barg chetida kuyish, dog‘ yoki g‘ayritabiiy buralish.",
+    "tavsiya": "Yaqinda qo‘llangan vositalar va muhitni tekshiring.",
+    "eslatma": "Barg surati bilan sababni qat’iy aniqlash qiyin."
+  }
+]

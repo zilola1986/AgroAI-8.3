@@ -1,0 +1,6 @@
+streamlit>=1.38,<2
+pillow>=10
+pandas>=2
+numpy>=1.24
+torch>=2.2,<3
+torchvision>=0.17,<1

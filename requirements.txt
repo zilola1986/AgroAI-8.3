@@ -4,3 +4,5 @@ pandas>=2
 numpy>=1.24
 torch>=2.2,<3
 torchvision>=0.17,<1
+
+gdown>=5.2,<6

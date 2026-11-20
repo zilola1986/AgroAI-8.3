@@ -48,7 +48,7 @@ page=st.sidebar.radio('Bo‘limni tanlang',[
  '✨  Loyiha haqida'
 ],label_visibility='collapsed')
 st.sidebar.markdown("---")
-st.sidebar.caption("Barg salomatligi • v8.3")
+st.sidebar.caption("Barg salomatligi • v8.4")
 st.markdown("""<div class="hero"><small>AGROAI • LEAF HEALTH</small>
 <h1>🌿 Tabiatni asrash — aqlli texnologiyadan boshlanadi</h1>
 <p>Bargni suratga oling. AI ehtimoliy kasallik belgisini baholaydi va parvarish tavsiyasini beradi.</p></div>""",unsafe_allow_html=True)
@@ -80,7 +80,7 @@ if page.startswith('🔬'):
    st.subheader('2. Sun’iy intellekt tahlili')
    if st.button('🔍 Tahlilni boshlash',type='primary',use_container_width=True):
     try:
-     with st.spinner('AI modeli suratni tahlil qilmoqda. Model kompyuterdagi fayldan ochiladi...'):
+     with st.spinner('AI modeli suratni tahlil qilmoqda. Birinchi ishga tushishda model serverga yuklanishi mumkin...'):
       raw=classify(im)
       st.session_state['result']=(hashlib.sha256(data).hexdigest(),assess(raw,selected))
     except Exception as e:
@@ -103,7 +103,30 @@ if page.startswith('🔬'):
      st.caption('Bu model taxmini, tasdiqlangan tashxis emas. Model faqat sog‘lom va zararlangan bargni farqlashga o‘qitilgan.')
      if is_estimate:
       st.success('Barg holati bo‘yicha dastlabki AI taxmini olindi.')
-      st.info('AI bargdagi alomatlarni baholaydi; ba’zi belgilar turli kasalliklarda o‘xshash bo‘lishi mumkin.')
+      condition=result['top']['condition'].casefold()
+      if 'zararlangan' in condition:
+       st.markdown('#### 🔎 Bargdagi ehtimoliy muammolar va belgilar')
+       st.warning('AI zararlanish ehtimolini baholadi, ammo kasallik nomini yoki alohida belgilarni aniqlamadi. Quyidagilarni suratga qarab foydalanuvchi belgilaydi.')
+       symptom_info={
+        '🟤 Jigarrang yoki qora dog‘lar': ('Dog‘lanish', 'Bargda to‘q rangli dog‘lar ayrim zamburug‘li yoki bakterial muammolarda, shuningdek shikastlanishda uchrashi mumkin.', 'Bargni quruq tutishga, sug‘orishda suvni bargga emas tuproqqa yo‘naltirishga harakat qiling.'),
+        '🟡 Barg sarg‘ayishi': ('Sarg‘ayish', 'Sarg‘ayish ortiqcha yoki kam sug‘orish, oziqa yetishmovchiligi va ayrim kasalliklarda kuzatilishi mumkin.', 'Tuproq namligini, drenajni va o‘simlikning yorug‘lik sharoitini tekshiring.'),
+        '⚪ Oq yoki kulrang qoplama': ('Oq qoplama', 'Un yoki changga o‘xshash qoplama ayrim zamburug‘li kasalliklar bilan bog‘liq bo‘lishi mumkin.', 'Havo aylanishini yaxshilang va barglarning uzoq vaqt nam turishidan saqlaning.'),
+        '🍂 Qurish yoki kuygan chetlar': ('Qurish', 'Barg chetlarining qurishi issiq, qurg‘oqchilik, tuz to‘planishi yoki boshqa stress omillari bilan bog‘liq bo‘lishi mumkin.', 'Sug‘orish me’yorini va kuchli quyosh ta’sirini tekshiring.'),
+        '🌀 Barg buralishi yoki shakl o‘zgarishi': ('Shakl o‘zgarishi', 'Buralish zararkunandalar, harorat, namlik yoki ayrim kasalliklarda uchrashi mumkin.', 'Bargning ustki va pastki tomonini tekshiring, o‘zgarishlarni kuzating.'),
+        '🐛 Teshiklar yoki hasharot izlari': ('Zararkunanda belgisi', 'Teshiklar va kemirilgan joylar hasharotlar yoki boshqa zararkunandalar ta’siridan paydo bo‘lishi mumkin.', 'Bargning ikki tomonini tekshiring, zararkunanda ko‘rilsa mahalliy agronomdan maslahat oling.'),
+       }
+       chosen=st.multiselect('Suratda o‘zingiz ko‘rgan belgilarni tanlang:',list(symptom_info),key='agro_symptoms')
+       if chosen:
+        for symptom in chosen:
+         title,explanation,tip=symptom_info[symptom]
+         with st.expander(f'🌿 {title}: mumkin bo‘lgan sabablar',expanded=True):
+          st.write(explanation)
+          st.write('**Tavsiya:** '+tip)
+       else:
+        st.info('Belgilarni tanlasangiz, har biriga mos tushuntirish va parvarish tavsiyasi chiqadi.')
+       st.caption('Tanlangan belgilar foydalanuvchi kuzatuvi asosida. Ular AI tomonidan aniqlangan yoki kasallik tashxisi sifatida ko‘rsatilmaydi.')
+      else:
+       st.success('Model bargni sog‘lom deb baholadi. Shunga qaramay, o‘simlikni muntazam kuzatib boring.')
       st.markdown('#### 🌼 Parvarish bo‘yicha mos tavsiyalar')
       for n,item in enumerate(recommend(name,result['top']['condition'],weather,water,location),1):
        st.write(f'{n}. {item}')

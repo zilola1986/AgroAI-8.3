@@ -1,6 +1,8 @@
 """AgroAI 8.3: binary ResNet18 leaf health estimate."""
 from functools import lru_cache
 from pathlib import Path
+import os
+import tempfile
 
 MODEL_ID = 'AgroAI 8.3 — ResNet18, sog‘lom / zararlangan (2 sinf)'
 LABELS = ['Sog‘lom barg', 'Zararlangan barg']
@@ -12,7 +14,19 @@ def classifier():
     from torchvision import models
     path = Path(__file__).resolve().parent.parent / 'models' / 'AgroAI_v8_2_binary.pth'
     if not path.is_file():
-        raise FileNotFoundError(f'Model topilmadi: {path}')
+        import gdown
+        path.parent.mkdir(parents=True, exist_ok=True)
+        file_id = os.environ.get('AGROAI_MODEL_FILE_ID', '1ZH3_1ifC8b78-a24rAdtAPf6NSHyWAwQ')
+        # Temporary download prevents a partial file being treated as a valid model.
+        with tempfile.NamedTemporaryFile(dir=path.parent, suffix='.pth', delete=False) as tmp:
+            temporary = Path(tmp.name)
+        try:
+            result = gdown.download(id=file_id, output=str(temporary), quiet=False)
+            if not result or not temporary.exists() or temporary.stat().st_size < 1_000_000:
+                raise RuntimeError('Google Drive model faylini yuklab bo‘lmadi. Ulashish ruxsatini tekshiring.')
+            temporary.replace(path)
+        finally:
+            temporary.unlink(missing_ok=True)
     checkpoint = torch.load(path, map_location='cpu', weights_only=True)
     if not isinstance(checkpoint, dict):
         raise ValueError('Model fayli kutilgan checkpoint formatida emas.')
